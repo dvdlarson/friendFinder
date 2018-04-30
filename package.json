@@ -12,10 +12,15 @@
     "url": "git+https://github.com/dvdlarson/friendFinder.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "David Larson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dvdlarson/friendFinder/issues"
   },
-  "homepage": "https://github.com/dvdlarson/friendFinder#readme"
+  "homepage": "https://github.com/dvdlarson/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  }
 }
