@@ -1,76 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Friend Finder - survey</title>
-    <!-- My styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Bootstrap & JQuery-->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="../js/surveypage.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
 
-  </head>
-  <body>
-    <div class="col-xs-12">
-      <div class="row">
-        <h1>Survey questions</h1>
-        <hr>
-        <h2>About you</h2>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
         <form>
-          <div class="form-group">
-            <label for="Name">Name (Required)</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="form-group">
-            <label for="photoURL">Link to a picture of you (Required)</label>
-            <input type="url" class="form-control" id="photoURL">
-          </div>
+            <legend>Friend Finder!</legend>
+            <div class="form-group">
+                <label for="name">Name (Required)</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="photo">Link to Photo Image</label>
+                <input type="text" class="form-control" id="photo" placeholder="Photo">
+            </div>
+            <div class="row text-center"><h5>Please answer the following ten questions with a score of 1-5.<br>1 indicates you completely DISAGREE, 5 indicates you COMPLETELY AGREE.<br>After your scores are submitted, you will see your best match!</h5></div>
+            <div class="form-group">
+                <label for="name">My goals in life are clear.</label>
+                <select class="form-control" id="q1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">If people are rude to me, I just shrug it off.</label>
+                <select class="form-control" id="q2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">I don't practice what I preach because I'm not the kind of person I'm preaching to.</label>
+                <select class="form-control" id="q3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">The stupider it looks, the more important it probably is.</label>
+                <select class="form-control" id="q4">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">I consistently strive to slack off as much as possible.</label>
+                <select class="form-control" id="q5">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">I prefer to achieve my own goals rather than helping others achieve theirs.</label>
+                <select class="form-control" id="q6">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Chaos in my life helps me focus.</label>
+                <select class="form-control" id="q7">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">I prefer to relax in the safety of my own delusions.</label>
+                <select class="form-control" id="q8">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">I believe religions should give people triple their money back if they don't deliver on their promises about the afterlife.</label>
+                <select class="form-control" id="q9">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Too much is always better than not enough.</label>
+                <select class="form-control" id="q10">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
 
-          <div id="questionDiv"></div>
+            <button type="submit" class="btn btn-default submit survey-btn" data-toggle="modal" data-target="#myModal">Submit</button>
+        </form>
+        
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">You would probably get along well with:</h4>
+                    </div>
 
-          <button class="btn btn-primary btn-block" id="submitForm" type="submit">Submit</button>
-        </form>  
+                    <div class="modal-body" id="bestMatch">
+                        <h2 class="text-center" id="matchNameH"></h2>
+                        <img id="matchImg" class="img-responsive center-block" style="height:200px" alt="Responsive image">
+                    </div>
 
-        <footer>
-          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/dvdlarson/friendFinder">GitHub Repo</a></p>
-        </footer>  
-s
-      </div>
-    </div>  
-    <!-- Modal for error -->
-    <div id="errorModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Please fill out all fields before submitting!</h4>
-          </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-    <!-- Modal for match -->
-    <div id="matchModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Here is your closest match!</h4>
-          </div>
-          <div class="modal-body" id="modalContent"></div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+
+    <footer class="footer">
+        <div class="container" id="footer-text">
+            <br>
+            <p class="text-muted"><a href="/">Home</a> | <a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/dvdlarson/friendFinder.git" target="_blank">GitHub Repo</a></p>
         </div>
-      </div> 
-    </div>
+    </footer>
 
-  </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--*****************************************-->
+    <!-- BELOW CODE HANDLES HOW FORM DATA IS SENT TO & RETRIEVED FROM THE SERVER-->
+    <script type="text/javascript">
+    // VARIABLES
+    var scoreDifference = [];
+    var scoreArray = [];
+    var friend;
 
+
+    /**********************************************/
+    // FUNCTIONS
+    // Using jQuery to download data from the server in order to match scores
+    var getMatches = function() {
+        // Getting the location of the root page
+        var currentURL = window.location.origin;
+        // Clearing the array holding the potential friend match scores
+        scoreArray.length = 0;
+        // Using a GET command to get the requested data
+        $.get("/api/friends", function(friends) {
+            for (var i = 0; i < friends.length; i++) {
+                console.log(friends[i].name);
+            }
+            // Calling the getDifference() function
+          //  console.log(friends);
+            getDifference(friends);
+        });
+    };
+
+    var getDifference = function(friends) {
+        // Storing the user's responses in a variable
+        var userAnswer = friends[friends.length - 1];
+        // Looping through each potential friend's answers
+        for (var i = 0; i < friends.length - 1; i++) {
+            friend = friends[i];
+            // Calculating the difference for each question between 1 friend & and the user's surveys
+            var matchScore = function(friend) {
+                for (var i = 0; i < userAnswer.scores.length; i++) {
+                    scoreDifference[i] = Math.abs(parseInt(userAnswer.scores[i]) - parseInt(friend.scores[i]));
+                }
+                // Logging the differences by question
+                console.log(friend.name + "'s Diffs: " + scoreDifference);
+                // Calculating the total difference
+                var sum = scoreDifference.reduce(add, 0);
+                // Finding the sum of the differences (i.e., summing each scoreDifference array)
+                function add(a, b) {
+                    return a + b;
+                }
+                // Logging the difference
+                console.log("total difference"+sum);
+                // Storing the difference in an array
+                scoreArray.push(sum);
+            };
+            // Calling the matchScore() function
+            matchScore(friend);
+        }
+        // Logging the array of total scores
+        console.log(scoreArray);
+        // Calculating the lowest score & logging the name of the match
+        var minScore = Math.min(...scoreArray);
+        var matchName = friends[scoreArray.indexOf(minScore)].name;
+        var matchPhoto = friends[scoreArray.indexOf(minScore)].photoURL;
+        // Logging the lowest score and name of the corresponding best match
+        console.log(minScore);
+        console.log(matchName);
+        // Adding the best match's name and photo to the modal
+        $("#matchNameH").text(matchName);
+        $("#matchImg").attr("src", matchPhoto);
+    };
+
+    /**********************************************/
+    // MAIN PROCESSES
+    // Creating the front-end JS that POSTS the form data to the express server
+    $(".submit").on("click", function(event) {
+        // Getting the location of the root page
+        var currentURL = window.location.origin;
+       
+        event.preventDefault();
+
+        // Grabbing the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [$("#q1").val().trim(),
+                $("#q2").val().trim(),
+                $("#q3").val().trim(),
+                $("#q4").val().trim(),
+                $("#q5").val().trim(),
+                $("#q6").val().trim(),
+                $("#q7").val().trim(),
+                $("#q8").val().trim(),
+                $("#q9").val().trim(),
+                $("#q10").val().trim()
+            ]
+        };
+        // Logging the user's answers
+        console.log(newFriend);
+        // Creating the function for callback??
+        $.post(currentURL + "/api/friends", newFriend,
+            function(data) {
+                // If the form is successfully submitted, find the best match
+                if (data) {
+                    console.log("Form submitted.");
+                    // Calling the getMatches() function
+                    getMatches();
+                }
+                // If there is an error, let the user know
+                else {
+                    alert("Oops! Something went wrong.");
+                }
+                // Clearing the form when submitting
+                $("#name").val("");
+                $("#photo").val("");
+                $("#q1").val("");
+                $("#q2").val("");
+                $("#q3").val("");
+                $("#q4").val("");
+                $("#q5").val("");
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val("");
+            }
+        );
+    });
+    </script>
+</body>
 </html>

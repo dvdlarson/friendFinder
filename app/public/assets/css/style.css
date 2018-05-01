@@ -1,0 +1,11 @@
+body {
+	background-color: lightgray !important;
+}
+
+.form-control {
+	width:250px;
+}
+
+.survey-btn {
+	background-color: #e95420;
+}
