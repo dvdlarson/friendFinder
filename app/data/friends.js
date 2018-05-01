@@ -8,7 +8,7 @@ var friendsData = [
 
     {"name":"Gordon Ramsay",
     "photoURL":"https://cdn.vox-cdn.com/thumbor/T8d_mFfsglljnRVA66XAtYgMdHk=/0x8:468x320/920x613/filters:focal(0x8:468x320)/cdn.vox-cdn.com/uploads/chorus_image/image/37112038/ramsay1.0.0.jpg",
-    "scores":[	"5","4","3","4","4","3","2","4","1","4"]},
+    "scores":[	"5","1","3","4","4","3","2","4","1","4"]},
 
 
     {"name":"Neil Tyson",
